@@ -8,12 +8,12 @@ body {
 
 /* Azul Marino Profundo: var(--dark-blue)
 Azul Oscuro: var(--normal-blue)
-Azul Turquesa: var(--turquoise)
+Azul Turquesa: #00A8E8
 Cian Claro: var(--cyan)
 Blanco: var(--normal-white) */
 
 #header {
-    background-color: var(--dark-blue) !important;
+    background-color: #001F3F !important;
 }
 
 #header a img{
@@ -31,7 +31,7 @@ Blanco: var(--normal-white) */
 }
 
 .cardsita::after {
-    background: linear-gradient(90deg,var(--dark-blue), var(--turquoise) 25%,var(--cyan)) !important;
+    background: linear-gradient(90deg, #001F3F, #00A8E8 25%, #7FDBFF) !important;
 }
 
 #carousel .overlay {
@@ -41,7 +41,7 @@ Blanco: var(--normal-white) */
     left: 0;
     right: 0;
     background-color: (0, 0, 0, 0.5);
-    color: var(--normal-white);
+    color: #FFFFFF;
 }
 
 #carousel .overlay .container, 
@@ -50,7 +50,7 @@ Blanco: var(--normal-white) */
 }
 
 #footer {
-    background: linear-gradient(90deg,var(--cyan), var(--turquoise) 25%,var(--dark-blue));
+    background: linear-gradient(90deg, #7FDBFF, #00A8E8 25%, #001F3F);
     position: absolute;
     width: 100%;
 }
@@ -64,16 +64,16 @@ Blanco: var(--normal-white) */
 }
 
 .text-platzi {
-    color: var(--turquoise) !important;
+    color: #00A8E8 !important;
 }
 
 .btn-platzi {
-    color: var(--normal-white);
-    background-color: var(--turquoise);
+    color: #FFFFFF;
+    background-color: #00A8E8;
 }
 
 .btn-platzi:hover {
-    background-color: var(--dark-blue);
+    background-color: #001F3F;
 }
 
 #place-time img{
@@ -86,7 +86,7 @@ Blanco: var(--normal-white) */
 }
 
 .color2 {
-    color: var(--turquoise);
+    color: #00A8E8;
     font-family: 'Monserrat', sans-serif;
     animation: animate 2s ease-in-out infinite;
 }
@@ -94,14 +94,14 @@ Blanco: var(--normal-white) */
 @keyframes animate {
     0% {
         transform: scale(1);
-        color: var(--normal-white);
+        color: #FFFFFF;
     }
     50% {
         transform: scale(1.3);
-        color: var(--turquoise); 
+        color: #00A8E8; 
     }
     100% {
         transform: scale(1);
-        color: var(--normal-white);
+        color: #FFFFFF;
     }
 }
