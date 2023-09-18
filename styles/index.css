@@ -1,5 +1,19 @@
+body {
+    --dark-blue: #001F3F;
+    --normal-blue: #0074E4;
+    --turquoise: #00A8E8;
+    --cyan: #7FDBFF;
+    --normal-white: #FFFFFF;
+}
+
+/* Azul Marino Profundo: var(--dark-blue)
+Azul Oscuro: var(--normal-blue)
+Azul Turquesa: var(--turquoise)
+Cian Claro: var(--cyan)
+Blanco: var(--normal-white) */
+
 #header {
-    background-color: #464646 !important;
+    background-color: var(--dark-blue) !important;
 }
 
 #header a img{
@@ -16,6 +30,10 @@
     position: relative;
 }
 
+.cardsita::after {
+    background: linear-gradient(90deg,var(--dark-blue), var(--turquoise) 25%,var(--cyan)) !important;
+}
+
 #carousel .overlay {
     position: absolute;
     top: 0;
@@ -23,7 +41,7 @@
     left: 0;
     right: 0;
     background-color: (0, 0, 0, 0.5);
-    color: white;
+    color: var(--normal-white);
 }
 
 #carousel .overlay .container, 
@@ -32,9 +50,13 @@
 }
 
 #footer {
-    background: linear-gradient(90deg,#30391F,#668A4C 25%,#ACCC7B);
+    background: linear-gradient(90deg,var(--cyan), var(--turquoise) 25%,var(--dark-blue));
     position: absolute;
     width: 100%;
+}
+
+.card-img-top {
+    height: 360px;
 }
 
 .col-lg a, .col-12 a{
@@ -42,16 +64,16 @@
 }
 
 .text-platzi {
-    color: #ACCC7B !important;
+    color: var(--turquoise) !important;
 }
 
 .btn-platzi {
-    color: white;
-    background-color: #ACCC7B;
+    color: var(--normal-white);
+    background-color: var(--turquoise);
 }
 
 .btn-platzi:hover {
-    background-color: #7eaa33;
+    background-color: var(--dark-blue);
 }
 
 #place-time img{
@@ -64,7 +86,7 @@
 }
 
 .color2 {
-    color: #668A4C;
+    color: var(--turquoise);
     font-family: 'Monserrat', sans-serif;
     animation: animate 2s ease-in-out infinite;
 }
@@ -72,14 +94,14 @@
 @keyframes animate {
     0% {
         transform: scale(1);
-        color: #FFFFFF;
+        color: var(--normal-white);
     }
     50% {
         transform: scale(1.3);
-        color: #668A4C; 
+        color: var(--turquoise); 
     }
     100% {
         transform: scale(1);
-        color: #FFFFFF;
+        color: var(--normal-white);
     }
 }

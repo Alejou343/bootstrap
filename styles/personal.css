@@ -1,3 +1,11 @@
+body {
+    --dark-blue: #001F3F;
+    --normal-blue: #0074E4;
+    --turquoise: #00A8E8;
+    --cyan: #7FDBFF;
+    --normal-white: #FFFFFF;
+}
+
 .center {
 	position: relative;
 	left: 50%;
@@ -12,9 +20,15 @@
 	padding: 4em 0;
 }
 
+/* Azul Marino Profundo: var(--dark-blue)
+Azul Oscuro: var(--normal-blue)
+Azul Turquesa: var(--turquoise)
+Cian Claro: #7fdbff
+Blanco: var(--normal-white) */
+
 .cardsita {
 	position: relative;
-	border: 1px solid #ACCC7B;
+	border: 1px solid var(--turquoise);
 	padding: 20px 0;
 	width: 100%;
 	background: #fff;
@@ -26,11 +40,11 @@
 }
 
 .badge-green {
-	background-color: #668A4C;
+	background-color: var(--normal-blue);
 }
 
 .card-details {
-	background-color: #ACCC7B;
+	background-color: var(--normal-blue);
 }
 
 .cardsita:after {
@@ -40,14 +54,14 @@
 	width: 100%;
 	height: 130px;
 	top: 0;
-	background: #FFFFFF;
+	background: var(--normal-white);
 	border-bottom: 1px solid rgba(0, 0, 0, .15);
 	z-index: -1
 }
 
 .card_photo {
 	position: relative;
-	background: #FFFFFF;
+	background: var(--normal-white);
 	padding: 5px;
 	width: 190px;
 	height: 190px;
@@ -107,7 +121,7 @@
 
 .circle svg {
 	fill: none;
-	stroke: #668A4C;
+	stroke: var(--turquoise);
 	stroke-linecap: round;
 	stroke-width: 3;
 	stroke-dasharray: 1;
@@ -123,11 +137,11 @@
 
 @keyframes stroke-draw {
 	from {
-    stroke: #464646;
+    stroke: var(--dark-blue);
     stroke-dasharray: 1;
 	}
 	to {
-    stroke: #ACCC7B;
+    stroke: var(--turquoise);
     transform: rotate(180deg);
     stroke-dasharray: 8;
 	}
